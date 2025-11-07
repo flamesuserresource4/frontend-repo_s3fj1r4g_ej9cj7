@@ -28,7 +28,7 @@ const testiData = [
   },
   {
     quote:
-      'Awalnya ragu Rp 149rb bisa apa. Ternyata ini shortcut. Saya dapat project content creation AI pertama saya, nilainya 5 juta. Balik modal!',
+      'Awalnya ragu Rp 199.800 bisa apa. Ternyata ini shortcut. Saya dapat project content creation AI pertama saya, nilainya 5 juta. Balik modal!',
     name: 'Sarah',
     role: 'Freelancer',
     img: 'https://images.unsplash.com/photo-1544006659-f0b21884ce1d?q=80&w=1200&auto=format&fit=crop',

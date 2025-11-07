@@ -27,7 +27,7 @@ const FinalCTA = () => {
           {formatTime(remaining)}
         </div>
         <div className="mt-8">
-          <CTAButton href="#">Daftar Sekarang & Hemat 97% (Rp 149.000)</CTAButton>
+          <CTAButton href="#checkout">Tambah ke Keranjang (Rp 199.800)</CTAButton>
         </div>
         <p className="mt-3 text-sm text-neutral-400">Akses Lifetime · Garansi Bimbingan · Update Gratis</p>
       </div>

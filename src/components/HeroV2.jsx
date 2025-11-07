@@ -22,7 +22,7 @@ const HeroV2 = () => {
           Tanpa Skill Coding. Tanpa Jago Desain. 100% Cukup Laptop/HP Anda.
         </p>
         <div className="mt-8">
-          <CTAButton href="#final-cta">Mulai Belajar (Diskon 97% Hari Ini)</CTAButton>
+          <CTAButton href="#final-cta">Mulai Belajar (Rp 199.800)</CTAButton>
         </div>
         <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-black via-black/60 to-transparent" />
       </div>

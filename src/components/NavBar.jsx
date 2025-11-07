@@ -7,7 +7,7 @@ const NavBar = () => {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
         <a href="#" className="flex items-center gap-2 text-white font-semibold">
           <span className="inline-block h-2 w-2 rounded-full bg-amber-400" />
-          <span>ViralX AI</span>
+          <span>JR AICADEMY</span>
         </a>
         <div className="hidden sm:flex items-center gap-6 text-sm text-neutral-200">
           <a href="#mulai" className="hover:text-white">Manfaat</a>

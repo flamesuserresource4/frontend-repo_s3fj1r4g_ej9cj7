@@ -6,21 +6,37 @@ const CTAButton = ({ children, onClick, href }) => {
   const golden =
     'bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500 text-black hover:from-amber-300 hover:via-yellow-300 hover:to-amber-400 focus-visible:ring-amber-300 ring-offset-black';
 
-  const ButtonEl = (
-    <button type="button" onClick={onClick} className={`${base} ${golden}`}>
+  const handleClick = (e) => {
+    try {
+      if (typeof window !== 'undefined' && typeof window.fbq === 'function') {
+        window.fbq('track', 'AddToCart');
+      }
+    } catch (err) {
+      // silently ignore pixel errors
+    }
+
+    if (typeof onClick === 'function') {
+      onClick(e);
+    }
+
+    if (href) {
+      // Smooth scroll for hash links, otherwise navigate
+      if (href.startsWith('#')) {
+        const el = document.querySelector(href);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // ensure hash updates for deep-linking
+        try { window.history.replaceState(null, '', href); } catch {}
+      } else {
+        window.location.href = href;
+      }
+    }
+  };
+
+  return (
+    <button type="button" onClick={handleClick} className={`${base} ${golden}`}>
       {children}
     </button>
   );
-
-  if (href) {
-    return (
-      <a href={href} className="no-underline">
-        {ButtonEl}
-      </a>
-    );
-  }
-
-  return ButtonEl;
 };
 
 export default CTAButton;

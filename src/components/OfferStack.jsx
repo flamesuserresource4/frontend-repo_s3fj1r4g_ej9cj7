@@ -29,8 +29,8 @@ const OfferStack = () => {
           </div>
           <div className="rounded-2xl border border-amber-400/40 bg-gradient-to-b from-amber-400/10 to-transparent p-6">
             <p className="text-neutral-300">Dapatkan Semuanya Hari Ini Hanya:</p>
-            <p className="mt-2 text-2xl text-neutral-400 line-through">Rp 4.999.000</p>
-            <p className="mt-1 text-5xl font-extrabold text-amber-400">Rp 149.000</p>
+            <p className="mt-2 text-2xl text-neutral-400 line-through">Rp 11.697.000</p>
+            <p className="mt-1 text-5xl font-extrabold text-amber-400">Rp 199.800</p>
             <div className="mt-6">
               <CTAButton href="#final-cta">Daftar Sekarang</CTAButton>
             </div>
